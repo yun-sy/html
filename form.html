@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form method="get">
+    <form method="post" enctype="multipart/form-data">
         아이디 : <input type="text" name="user_id" maxlength="5" value="test"><br>
         비밀번호 : <input type="password" name="user_pw"  required><br>
 
@@ -21,8 +21,33 @@
         <input type="radio" name="gender" value="2">여<br>
 
         <!-- 숫자만 입력 가능(자바스크립만으로도 가능)-->
-         나이 : <input type="number" name="age" value=""><br>
+        나이 : <input type="number" name="age" value=""><br>
+        
+        <!--날짜 입력-->
+        생일 : <input type="date" name="birthday"><br>
+
+        <!-- 첨부 파일 (method="post" enctype="multipart/form-data") -->
+        <input type="file" name="profile"><br>
+        
+        <!-- 숨긴 값 (서버로 전송해야하는 값인데, 사용자한테는 숨기고 싶을때) -->
+        <input type="hidden" name="member_no" value="11">
+
+        <!-- 여러 행의 텍스트를 입력 -->
+        <textarea name="introduce" rows="5" cols="20">이전에 썼던 자기 소개</textarea><br>
+
+        <!-- 선택박스(드롭다운) -->
+        <select name="city">
+            <option value="seoul">서울</option>
+            <option value="gyeonggi">경기</option>
+            <option value="busan">부산</option>
+        </select>
+
         <input type="submit" value="로그인"><br>
+        <input type="reset" value="취소">
+        <input type="image" src="images/ganadi.png" height="100">
+        <input type="button" value="버튼" onclick="alert('회원가입되었습니다.')">
+        <button onclick="alert('버튼2클릭'); return false;">버튼2</button>
+
     </form>
 </body>
 </html>
