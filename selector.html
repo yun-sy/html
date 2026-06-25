@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+    선택자(selector)
+    - 스타일 적용
+    - 자바스크립트에서 이벤트 적용
+    - 크롤링
+    전체 : *
+    
+    -->
+    <style>
+        /* 전체 선택자
+        * {
+            color: red;
+        }
+        */
+
+        /* id 선택자 */
+        #title {
+            color: yellow;
+        }
+        /* 클래스 선택자 */
+        .content {
+            color: green;
+        }
+        /* 속성 선택자 */
+        input[type='text']{
+            background-color: gray;
+        }
+        /* 다중 선택자: 여러개 동시에 선택 */
+        #title, .content {
+            background-color: gainsboro;
+        }
+        /* 여러 선택자(사이에 공백없이): 동시에 적용된 선택자 */
+        p.content { /* p태그이면서 content인거 */
+            color: purple;
+        }
+        /* 자식 선택자: . parent 바로 밑에 있는 .child 
+        .parent > .child {
+            color: orange;
+        }
+        */
+        /* 자손 선택자: .parent 밑에 있는 모든 .child */
+        .parent .child {
+            color: orange;
+        }
+        /* 가상 선택자 몇번째 요소 */
+        /* li: nth-child; */
+
+    </style>
+</head>
+<body>
+    <h1>제목1</h1>
+    <p>안녕하세요</p>
+    <h1 id="title">제목2</h1>
+    <p class="content">안녕하세요</p>
+    <p class="content">안녕하세요</p>
+    <p class="content">안녕하세요</p>
+    <div class
+    <input type="text">
+    <input type="password">
+
+    <div class="parent">
+        부모
+        <div clsss="child">
+            자식1
+        </div>
+        <div class="child">
+            자식2
+            <div class="child">손주</div>
+        </div>
+    </div>
+    <div class="parent2">다른 부모
+        <div class="child">다른 자식</div>
+    </div>
+    <ul>
+        <li>멕시코</li>
+        <li>대한민국</li>
+        <li>체코</li>
+        <li>남아공</li>
+    </ul>
+</body>
+</html>
