@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        font-family: "Gowun Dodum", sans-serif;
+    }
+    div, span{
+        text-align: left;
+        /* line-height: 100px; */
+    }
+    a{
+        text-decoration: none;
+    }
+    div {
+        border: 1px solid #000;
+        width: 200px;
+        /* 내용이 길어져도 줄바꿈 안되게 */
+        white-space: nowrap;
+        /* 내용이 넘치면 숨김 */
+        overflow: hidden;
+        /* 넘치면 ...으로 표시 */
+        text-overflow: ellipsis;
+    }
+</style>
+<body>
+    <h1>자기 소개</h1>
+    <div>
+        저는 홍길동입니다. 야호야호야호
+    </div>
+    <span>
+        저는 홍길동입니다. 야호야호야호
+    </span>
+    <a href="https://www.naver.com">네이버</a>
+</body>
+</html>
