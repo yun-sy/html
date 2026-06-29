@@ -21,10 +21,24 @@
             box-sizing: border-box;
             box-shadow: 5px 5px 5px #f00;
         }
+        span{
+            border: 1px solid #000;
+            width: 100px;
+            height: 100px;
+            /* 인라인 속성은 width, height 적용 불가, margin은 좌/우만 적용 */
+            /* display: none; */
+            visibility: hidden;
+            margin: 10px;
+
+        }
     </style>
 </head>
 <body>
-    <div id="box1"></div><br>
+    <div id="box1"></div>
+    <p></p>
     <div id="box2"></div>
+    <p></p>
+    <span>안녕하세요</span>
+    반갑습니다
 </body>
 </html>
