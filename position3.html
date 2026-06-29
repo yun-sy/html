@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+        }
+
+        #box1 {
+            position: absolute;
+            background-color: red;
+            left: 50px;
+            top: -50px;
+        }
+        #box2 {
+            position: absolute;
+            background-color: orange;
+            left: 50px;
+            top: 50px;
+        }
+        #box3 {
+            position: absolute;
+            background-color: yellow;
+        }
+        #container {
+            position: relative;
+            left: 300px;
+            top: 300px;
+            width: 500px;
+            height: 120px;
+            border: 1px solid #000;
+            /* 넘치는 부분 숨기기: hidden, 스크롤: scroll */
+            overflow: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+    </div>
+
+</body>
+
+</html>
